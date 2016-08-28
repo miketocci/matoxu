@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>"
+ <script>
+ $(document).ready(function(){
+
+$("#Student").click(function() {
+    $("#oldnewdiv").css("visibility", "visible");
+    $("#Student").css("visibility", "hidden");
+    $("#Company").css("visibility", "hidden");
+});
+$("#Company").click(function() {
+    $("#oldnewdiv").css("visibility", "visible");
+    $("#Student").css("visibility", "hidden");
+    $("#Company").css("visibility", "hidden");
+});
+
+});
+</script>
+ </head>
+
+ <body>
+  <h2>Oh Hi! Welcome to Obido</h2>
+  <form id='main' action='createacct' >
+  <div>
+	<input type='button' id='Student' value='Student' ></input>
+	  <input type='button' id='Company' value='Company'  ></input>
+  </div> 
+  <div style="visibility: hidden" id='oldnewdiv'>
+	  <input type='button' value='Returning'  ></input>
+	  <p><input type='submit' value='New'  ></input>
+  <div>
+  </form>
+ </body>
+</html>
